@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administrador de Tareas</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<header class="header">
+			<h1>Mis tareas del dia</h1>
+		</header>
+		<article class="container">
+			<div class="form">
+				<input type="text" id="taskInput" placeholder="Ingresa una tarea">
+				<button id="addTaskButton" class="btn">+</button>
+			</div>
+			<ul id="taskList" class="task-list">
+				<li>
+					<article>
+						<input type="checkbox" class="task-checkbox">
+						<span class="task-text">Tarea 1</span>
+					</article>
+					<i class="fa fa-trash"></i>
+				</li>
+			</ul>
+		</article>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>

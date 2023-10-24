@@ -1,0 +1,150 @@
+html,
+body {
+	background: #f2f2f2;
+	font-family: Roboto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	background: #fff;
+	animation: color 15s infinite ease-in-out;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	width: 100%;
+}
+
+h1 {
+	color: #473e39;
+	font-weight: 800;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+main, .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container {
+	padding: 1rem 0;
+	width: 100%;
+	max-width: 640px;
+}
+.task-list {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+	width: 100%;
+}
+
+.task-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	color: #473e39;
+	font-size: 16px;
+	padding: 20px;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.task-list li:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.task-list li:last-child {
+	margin-bottom: 0;
+}
+
+.task-text {
+	flex: 1;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.task-checkbox {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+i.fa-trash {
+	color: #e74c3c;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.form {
+	display: flex;
+	color: #473e39;
+	height: 64px;
+	padding: 0;
+	width: 100%;
+}
+
+.form input {
+	background: #fff;
+	border: none;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	color: #473e39;
+	float: left;
+	font-size: 16px;
+	height: 64px;
+	padding: 0 20px;
+	width: 100%;
+}
+
+.form input:focus {
+	background: rgba(255, 255, 255, .95);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	outline: none;
+}
+
+.form button.btn {
+	background: rgba(0, 84, 166, 0.95);
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	color: #fff;
+	font-size: 16px;
+	height: 64px;
+	width: 64px;
+}
+
+.form button:hover {
+	background: rgba(0, 129, 255, 0.95);
+	cursor: pointer;
+}
+
+
+@keyframes color {
+	0% {
+		background: #33CCCC;
+	}
+	
+	20% {
+		background: #33CC36;
+	}
+	
+	40% {
+		background: #B8CC33;
+	}
+	
+	60% {
+		background: #FCCA00;
+	}
+	
+	80% {
+		background: #33CC36;
+	}
+	
+	100% {
+		background: #33CCCC;
+	}
+}
