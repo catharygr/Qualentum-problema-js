@@ -8,7 +8,7 @@ const addTaskButton = document.querySelector("#addTaskButton");
 const taskList = document.querySelector("#taskList");
 //Crear un Array llamado "tasks" que contiene objetos que representam tareas
 let tasks = [];
-// Añadir un event listener al button que escucha por "click" y ejecuta la funcion "addTask"
+// Añadir un event listener al button que escucha por "click" y ejecuta la función "addTask"
 addTaskButton.addEventListener("click", addTask);
 
 // Funcion que añade una tarea al array "tasks"
@@ -31,7 +31,7 @@ function addTask() {
   // Limpiando el input
   taskInput.value = "";
 
-  // Renderizando las tareas con la funcion "renderTask" pasándole el array "tasks" como argumento
+  // Renderizando las tareas con la función "renderTask" pasándole el array "tasks" como argumento
   renderTask(tasks);
 }
 
@@ -50,7 +50,9 @@ function addEventListenersToCheckboxes() {
 
 // Crear function que añade un event listener a los iconos de la papelera
 function addEventListenersToPapelera() {
+  // Seleccionando todos los iconos de la papelera
   const iconosPapelera = taskList.querySelectorAll(".fa-trash");
+  // Iterando sobre los iconos de la papelera y añadiendo un event listener a cada uno que escuchará por "click" y encontrará la tarea correspondiente en el array "tasks" y la eliminará
   iconosPapelera.forEach((item) => {
     item.addEventListener("click", (event) => {
       const newTasks = tasks.filter((task) => event.target.id !== task.id);
@@ -66,7 +68,7 @@ function renderTask(tasks) {
   let taskHTML = "";
 
   // Iterando sobre el array "tasks" y creando un string con el HTML de cada tarea
-  // Esto es un ejemplo de scope, la variable "tasks" existe tanto fuera como dentro de la función pero la que se usa es la que llega como parametro
+  // Esto es un ejemplo de scope, las variables "tasks" existen tanto fuera como dentro de la función pero la que se usa dentro es la que llega como parámetro
   tasks.forEach((task) => {
     taskHTML += `
         <li>
