@@ -36,3 +36,5 @@
 - Hoisting: En alguna parte de tu código, demuestra tu comprensión del hoisting. Por ejemplo, invoca una función antes de declararla o haz referencia a una variable var antes de su declaración y comenta qué está sucediendo.
 
 - Scopes: Demuestra tu comprensión de los scopes locales y globales. Por ejemplo, utiliza variables con el mismo nombre en diferentes scopes y muestra cómo se comportan.
+
+- https://catharygr.github.io/Qualentum-problema-js/
